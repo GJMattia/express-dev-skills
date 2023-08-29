@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Greg's Skill List</title>
+  </head>
+  <body>
+    <h1 class="skills-title">All of my skills!</h1>
+    <a class="return" href="/">Return to Home Page!</a>
+    <h2 class="instructions">Please click a skill to see more details!</h2>
+    <ul class="skill-list">
+      <% skills.forEach(function(s) { %>
+      <li class="single-skill">
+        <a class="link" href="/skills/<%= s.id %>"><%= s.skill %></a>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

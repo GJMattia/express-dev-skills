@@ -1,8 +1,103 @@
+html{
+background-image: linear-gradient(147deg, #242424 0%, #b9ffee 74%);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+
+/* HomePage */
+
+.home-title{
+  font-size: 4rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #2f9a49 0%, #ffffff 74%);
+  border: 3px solid black;
+}
+
+.home-description{
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #00d134 0%, #000000 74%);
+  border: 3px solid black;
+  text-decoration: none;
+  color:white;
+}
+
+.home-description:hover{
+  background-image: linear-gradient(147deg, #00ffe5 0%, #000000 74%);
+  color:yellow;
+}
+
+/*  Index Page  */
+
+.skills-title{
+  margin:0;
+  font-size: 3rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #2f9a49 0%, #ffffff 74%);
+  border: 3px solid black;
+}
+
+.skill-list{
+  list-style: none;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #46ead2 0%, #ffffff 74%);
+  border: 3px solid black;
+}
+
+.single-skill{
+  padding:1rem;
+  font-size: 1.3rem;
+
+}
+
+.link{
+  text-decoration: none;
+  color: red;
+}
+
+.link:hover{
+  color:dodgerblue;
+}
+
+.link:visited{
+  color:purple;
+}
+
+.return{
+  margin:1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #270034 0%, #f200ff 74%);
+  border: 3px solid black;
+  text-decoration: none;
+  color: white;
+}
+
+.return:hover{
+  color:yellow;
+}
+
+.instructions{
+  margin:.5rem;
+  color:white;
+  padding:1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(147deg, #270034 0%, #ac7e00 74%);
+
 }
