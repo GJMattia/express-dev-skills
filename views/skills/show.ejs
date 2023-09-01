@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Greg's <%= skill.skill %></title>
-  </head>
-  <body>
-    <a class="return" href="/">Return to Home Page</a>
-    <a class="home-description" href="/skills">Return to All Skills</a>
-    <h3 class="home-title"><%= skill.skill %></h3>
-    <h3 class="instructions">Skill Level: <%= skill.level %></h3>
-    <h3 class="instructions">Started Learning: <%= skill.startDate %></h3>
-  </body>
-</html>
+<%- include('../partials/header') %>
+<a class="home-page" href="/">Click here to return to the homepage!</a>
+<h3 class="home-title"><%= skill.skill %></h3>
+<h3 class="instructions">Skill Level: <%= skill.level %></h3>
+<h3 class="instructions">Started Learning: <%= skill.startDate %></h3>
+<a class="edit-skill" href="/skills/<%= skill.id %>/edit">Edit Skill</a>
+<%- include('../partials/footer') %>

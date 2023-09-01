@@ -1,0 +1,8 @@
+<%- include('../partials/header') %>
+<a class="home-page" href="/">Click here to return to the homepage!</a>
+<p class="enter">Enter your new skill and click the button to add!</p>
+<form class="new-form" action="/skills" method="POST">
+  <input class="new-input" type="text" name="skill" autofocus />
+  <button class="new-btn" type="submit">Add new skill</button>
+</form>
+<%- include('../partials/footer') %>

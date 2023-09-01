@@ -1,103 +1,174 @@
 html{
-background-image: linear-gradient(147deg, #242424 0%, #b9ffee 74%);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-
+font-size: 62.5%;
+font-family: Tahoma;
+background-color: aliceblue;
 }
-
-body {
+.g{
+  font-size: 15rem;
+}
+p{
+  font-weight: 900;
+}
+body{
+  font-size:2rem;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-
-/* HomePage */
 
 .home-title{
-  font-size: 4rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  background-image: linear-gradient(147deg, #2f9a49 0%, #ffffff 74%);
-  border: 3px solid black;
+  text-align: center;
+border:2px solid black;
+border-radius: 1rem;
+padding: 2rem;
+width:50rem;
 }
 
-.home-description{
-  font-size: 1.5rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-image: linear-gradient(147deg, #00d134 0%, #000000 74%);
-  border: 3px solid black;
-  text-decoration: none;
-  color:white;
-}
-
-.home-description:hover{
-  background-image: linear-gradient(147deg, #00ffe5 0%, #000000 74%);
-  color:yellow;
-}
-
-/*  Index Page  */
-
-.skills-title{
-  margin:0;
-  font-size: 3rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  background-image: linear-gradient(147deg, #2f9a49 0%, #ffffff 74%);
-  border: 3px solid black;
-}
-
-.skill-list{
-  list-style: none;
-  border-radius: 1rem;
-  background-image: linear-gradient(147deg, #46ead2 0%, #ffffff 74%);
-  border: 3px solid black;
-}
-
-.single-skill{
-  padding:1rem;
-  font-size: 1.3rem;
-
-}
-
-.link{
-  text-decoration: none;
-  color: red;
-}
-
-.link:hover{
+.skills-list{
   color:dodgerblue;
-}
-
-.link:visited{
-  color:purple;
-}
-
-.return{
-  margin:1rem;
-  font-size: 1.5rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-image: linear-gradient(147deg, #270034 0%, #f200ff 74%);
-  border: 3px solid black;
+  font-size:2.5rem;
   text-decoration: none;
-  color: white;
+  margin:1rem;
 }
 
-.return:hover{
-  color:yellow;
+.home-page{
+  color:crimson;
+  font-size:2.5rem;
+  text-decoration: none;
+  margin:2rem;
+
 }
 
-.instructions{
-  margin:.5rem;
+.home-page:hover{
+  color:lawngreen;
+}
+
+.skills-list:hover{
+  color: lawngreen;
+}
+
+ul{
+  width: 40rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li>a{
+  color: darkblue;
+  text-decoration: none;
+
+}
+
+li>a:visited{
+  color: purple;
+}
+li>a:hover{
+  color: yellow;
+}
+
+li{
+  font-weight: 900;
+  width:40rem;
+  border: 1px solid black;;
+  display: flex;
+  justify-content: space-between;
+  padding:1.5rem;
+}
+
+.delete{
+  border:0;
+  background-color: darkred;
   color:white;
   padding:1rem;
+  margin-left: auto;
   border-radius: 1rem;
-  background-image: linear-gradient(147deg, #270034 0%, #ac7e00 74%);
+}
 
+.delete:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.new-form{
+  margin-top:3rem;
+}
+
+.enter{
+  margin-top:6rem;
+}
+
+.add-skill{
+  color:white;
+  background-color: dodgerblue;
+  position: relative;
+  left:2rem;
+  padding:1rem;
+  margin: 1rem;
+  border:2px solid black;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.add-skill:hover{
+  background-color: darkblue;
+}
+
+.new-input{
+  border: 1px solid black;
+  font-size: 2rem;
+  width:30rem;
+  height:3rem;
+}
+
+.new-btn{
+  margin-left:1rem;
+  padding: 1rem;
+  font-weight: 900;
+  width:15rem;
+  height:4rem;
+  color: white;
+  background-color: dodgerblue;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.new-btn:hover{
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+}
+
+.edit-skill{
+  color:white;
+  background-color: dodgerblue;
+  padding:1rem;
+  margin: 1rem;
+  border:2px solid black;
+  text-decoration: none;
+  border-radius: 1rem;
+
+}
+
+.label-list{
+  position: relative;
+  right:16rem;
+  top:2rem;
+  display: flex;
+  flex-direction: row;
+  width:100rem;
+}
+
+.label-line{
+  color:rgb(90, 90, 90);
+  border: 0;
+  margin-left:15rem;
+  font-size: 2rem;
+  width:30rem;
+}
+
+.edit-skill:hover{
+  background-color: aqua;
 }

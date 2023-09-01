@@ -1,7 +1,10 @@
 //This exports our functions in this module
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    create,
+    deleteOne,
+    update
   };
 
 
@@ -16,6 +19,25 @@ const skills = [
     {id: 121, skill: 'MONGODB', level: 0, startDate: `Haven't started yet`}
   ];
 
+//This function is for updating a skill
+
+function update(id, updatedSkill){
+  id = parseInt(id);
+  const skill = skills.find(skill => skill.id === id);
+  Object.assign(skill, updatedSkill)
+}
+
+
+//This function is for creating a new skill
+
+function create(skill){
+  skill.id = Math.floor(Math.random() * (999 - 122 + 1)) + 122;
+  skill.level = Math.floor(Math.random() * 10) + 1;
+  skill.startDate = 'August 2023';
+  skills.push(skill);
+};
+
+
 
 // This function grabs one singular skill based on its ID property as stated in the parameter
   function getOne(id){
@@ -29,3 +51,9 @@ const skills = [
   function getAll(){
     return skills;
   };
+
+  function deleteOne(id){
+    id = parseInt(id);
+    const index = skills.findIndex(skill => skill.id === id);
+    skills.splice(index, 1);
+  }

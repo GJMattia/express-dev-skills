@@ -1,0 +1,32 @@
+<%- include('../partials/header') %>
+<a class="home-page" href="/">Click here to return to the homepage!</a>
+<p class="enter">Edit your skill and click the button to commit changes!</p>
+<ul class="label-list">
+  <li class="label-line">Skill Name</li>
+  <li class="label-line">Start Date</li>
+  <li class="label-line">Skill Level</li>
+</ul>
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+  <input
+    class="new-input"
+    type="text"
+    name="skill"
+    value="<%= skill.skill %>"
+  />
+  <input
+    class="new-input"
+    type="text"
+    name="startDate"
+    value="<%= skill.startDate %>"
+  />
+  <input
+    class="new-input"
+    type="text"
+    name="level"
+    value="<%= skill.level %>"
+  />
+
+  <button class="new-btn" type="submit">Update All</button>
+</form>
+
+<%- include('../partials/footer') %>
